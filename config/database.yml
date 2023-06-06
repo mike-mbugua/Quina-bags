@@ -82,6 +82,3 @@ test:
 production:
   <<: *default
     url: <%= ENV["DATABASE_URL"] %>
-  database: quina_bags_production
-  username: quina_bags
-  password: <%= ENV["QUINA_BAGS_DATABASE_PASSWORD"] %>
