@@ -28,6 +28,6 @@ class BagsController < ApplicationController
 
     private
     def bags_params
-        params.permit(:name,:bagType,:name,:image,:price,:available,:description)
+        params.permit(:name,:bagType,:image,:price,:available,:description)
     end
 end
