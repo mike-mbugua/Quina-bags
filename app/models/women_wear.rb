@@ -1,0 +1,2 @@
+class WomenWear < ApplicationRecord
+end

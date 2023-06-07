@@ -1,0 +1,2 @@
+class MenWear < ApplicationRecord
+end
