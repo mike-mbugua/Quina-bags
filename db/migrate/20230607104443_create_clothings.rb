@@ -1,6 +1,7 @@
-class CreateWomenWears < ActiveRecord::Migration[7.0]
+class CreateClothings < ActiveRecord::Migration[7.0]
   def change
-    create_table :women_wears do |t|
+    create_table :clothings do |t|
+      t.string :genderType
       t.string :weartype
       t.string :image
       t.integer :price

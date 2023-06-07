@@ -1,2 +1,0 @@
-class MenWear < ApplicationRecord
-end

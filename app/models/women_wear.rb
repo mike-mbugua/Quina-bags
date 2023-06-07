@@ -1,2 +1,0 @@
-class WomenWear < ApplicationRecord
-end

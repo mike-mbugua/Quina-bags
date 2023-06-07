@@ -8,11 +8,16 @@ class BagsController < ApplicationController
         bag=Bag.find(params[:id]);
         render json: bag, status: :found
     end
-
+    
     def create
-        bag=Bag.create(bags_params)
-        render json: bag, status: :created
-    end
+        bag = Bag.new(bags_params)
+      
+        if bag.save
+          render json: bag, status: :created
+        else
+          render json: { error: bag.errors.full_messages }, status: :unprocessable_entity
+        end
+      end
 
 
     def destroy
